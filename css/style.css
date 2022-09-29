@@ -1,0 +1,341 @@
+@font-face {
+   font-family: 'Lato';
+   src: url("../fonts/Lato-Regular.woff2") format('woff2'), url("../fonts/Lato-Regular.woff") format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Lato';
+   src: url("../fonts/Lato-Bold.woff2") format('woff2'), url("../fonts/Lato-Bold.woff") format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Lato';
+   src: url("../fonts/Lato-Black.woff2") format('woff2'), url("../fonts/Lato-Black.woff") format('woff');
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+.page{
+   max-width: 1230px;
+   margin: 0 auto;
+   font-family: "Lato";
+}
+.titlefc,
+.titlesc {
+   font-size: 46px;
+   font-weight: 900;
+   line-height: 59.8px;
+   color: #1E212C;
+}
+.titlefc{
+   margin-bottom: 40px;
+}
+.text{
+   line-height: 25.6px;
+   color: #424551;
+   margin-bottom: 48px;
+}
+.scroll_text{
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 42px;
+   color: #1E212C;
+   margin-bottom: 24px;
+}
+li{
+   line-height: 25.6px;
+   color: #424551;
+   margin-bottom: 4px;
+}
+.scroll li::before{
+   background: url("../img/check.png") 0 0 no-repeat;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 16px;
+}
+
+.scroll li:last-of-type{
+   margin-bottom: 114px;
+}
+.first_title{
+   font-weight: 700;
+   line-height: 24px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #1E212C;
+   margin-bottom: 8px;
+}
+.titlesc{
+   margin-bottom: 16px;
+
+}
+.job_title{
+   font-size: 20px;
+   color: #787A80;
+   line-height: 30px;
+   margin-bottom: 32px;
+}
+.statistics{
+   font-weight: 700;
+   line-height: 25.6px;
+   color: #424551;
+   margin-bottom: 32px;
+}
+.statistics li:nth-child(1){
+   background: url("../img/Star.jpg") 0 6px no-repeat;
+}
+.statistics li:nth-child(2){
+   background: url("../img/Play.jpg") 0 6px no-repeat;
+}
+.statistics li:nth-child(3){
+   background: url("../img/Profile.jpg") 0 6px no-repeat;
+}
+.statistics li{
+   padding-left: 24px;
+}
+.hover{
+   font-family:"Lato";
+   font-size: 46px;
+   font-weight: 900;
+   line-height: 59.8px;
+   text-align: center;
+   text-transform: uppercase;
+   padding-left: 50px;
+   margin-bottom: 30px;
+}
+.hover span:nth-child(1):hover,
+.hover span:nth-child(8):hover {
+   color: red;
+}
+.hover span:nth-child(2):hover,
+.hover span:nth-child(9):hover {
+   color: orange;
+}
+.hover span:nth-child(3):hover,
+.hover span:nth-child(10):hover {
+   color: yellow;
+}
+.hover span:nth-child(4):hover,
+.hover span:nth-child(11):hover {
+   color: green;
+}
+.hover span:nth-child(5):hover,
+.hover span:nth-child(12):hover {
+   color: skyblue;
+}
+.hover span:nth-child(6):hover {
+   color: blue;
+}
+.hover span:nth-child(7):hover {
+   color: blueviolet;
+}
+.activ,
+.focus{
+   font-family: "Lato";
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 59.8px;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+   padding-left: 50px;
+   display: block;
+   margin: 0 auto;
+}
+.activ p:active{
+   color: red;
+}
+.focus-input{
+   text-align: center;
+   text-transform: uppercase;
+   line-height: 2px;
+   letter-spacing: 2px;
+   padding: 20px 40px;
+   width: 300px;
+   border: 3px dotted gray;
+   border-radius: 20px;
+   margin-bottom: 200px;
+}
+
+.focus-input:focus{
+   border: 3px dotted steelblue;
+   box-shadow: 0px 0px 39px 2px rgba(0, 247, 255, 0.322) inset;
+}
+.game-block{
+   font-family: "Lato";
+   font-size: 50px;
+   font-weight: 900;
+   line-height: 59.8px;
+   text-align: center;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 5px red;
+}
+.game{
+   max-width: 800px;
+   width: 100%;
+   max-height: 500px;
+   height: 100%;
+   margin: 0 auto;
+   border: 5px solid rgb(17, 235, 243);
+   background-image: url("../img/images.jpg");
+   margin-bottom: 50px;
+}
+
+
+[class*='block-']{
+   visibility: hidden;
+   opacity: 0;
+   background-color: rgb(23, 226, 216);
+   cursor:wait;
+   text-transform: uppercase;
+}
+
+[class*='block-']:hover,
+[class*='block-']:hover+* {
+   visibility: visible;
+   opacity: 1;
+}
+
+.block-one {
+   width: 50px;
+   height: 50px;
+   visibility: visible;
+   opacity: 1;
+   color: orangered;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 900;
+   text-align: center;
+   line-height: 50px;
+}
+
+.block-two {
+   width: 50px;
+   height: 50px;
+}
+
+.block-three {
+   height: 50px;
+   margin-right: 30%;
+   margin-top: -50px;
+}
+
+.block-four,
+.block-five,
+.block-six {
+   margin-left: auto;
+   margin-right: 30%;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-four {
+   width: 40px;
+   height: 50px;
+   margin-top: -50px;
+}
+
+.block-five {
+   height: 150px;
+   width: 40px;
+   margin-top: -50px;
+}
+
+.block-six {
+   width: 40px;
+   height: 40px;
+   margin-top: -40px;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-seven,
+.block-eight,
+.block-nine {
+   margin-left: 30%;
+   margin-top: -40px;
+}
+
+.block-seven {
+   height: 40px;
+   margin-right: 30%;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-eight {
+   width: 30px;
+   height: 40px;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-nine {
+   width: 30px;
+   height: 150px;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-ten {
+   width: 30px;
+   height: 30px;
+   margin-left: 30%;
+   margin-top: -30px;
+   background-color:rgb(23, 226, 216);
+}
+
+.block-eleven {
+   height: 20px;
+   margin-left: 30%;
+   margin-right: 30%;
+   margin-top: -30px;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-twelve,
+.block-thirteen,
+.block-fourteen {
+   margin-left: auto;
+   margin-right: 30%;
+}
+
+.block-twelve {
+   width: 20px;
+   height: 20px;
+   margin-top: -30px;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-thirteen {
+   width: 20px;
+   height: 170px;
+   margin-top: -30px;
+   background-color: rgb(23, 226, 216);
+}
+
+.block-fourteen {
+   height: 20px;
+   width: 555px;
+   margin-left: 0;
+   margin-right: 30%;
+}
+.block-fifteen{
+   height: 20px;
+   width: 20px;
+}
+
+[class*='block-']:last-child {
+   background-color: rgb(21, 255, 0);
+}
+
+[class*='block-']:last-child:hover {
+   background-color: #000;
+   background: url(../img/finish.jpg) center / cover no-repeat;
+   width: 100%;
+   min-height: 550px;
+   margin: -530px auto 0;
+}
